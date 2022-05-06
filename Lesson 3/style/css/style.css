@@ -1,0 +1,13 @@
+.grid {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 300px;
+  gap: 20px;
+}
+
+div img {
+  width: 100%;
+}

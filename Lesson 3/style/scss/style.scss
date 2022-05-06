@@ -1,3 +1,14 @@
-body {
-	
+.grid {
+
+	margin:  0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 300px;
+	gap: 20px;
+
+}
+div{
+	img{
+		width: 100%;
+	}	
 }

@@ -1,3 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 body {
-  background-color: aqua;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body main .container {
+  max-width: 996px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+body main .container .main__body section.big__picture > .position > h3.pos__center, body main .container .main__body section.medium__picture > .position > h3.pos__center {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+body main .container .main__body section.medium__picture {
+  max-width: 766px;
+  margin: 0 auto;
+}
+
+body main .container .main__body section.medium__picture > .position h3.pos__right {
+  float: right;
+}
+
+body main .container .main__body .position {
+  margin-bottom: 25px;
+}
+
+body main .container .main__body h3 {
+  margin-bottom: 10px;
+}
+
+body main .container .main__body section.section__bottom > img {
+  margin-bottom: 12px;
+}
+
+body main .container .main__body section.section__bottom > img + h4 {
+  margin-bottom: 32px;
+}
+
+body main .container .main__body section.section__bottom .list__title {
+  margin-bottom: 17px;
+}
+
+body main .container .main__body section.section__bottom > ul {
+  margin-bottom: 32px;
+}
+
+body main .container .main__body section.section__bottom > ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.025em;
+  color: #333333;
+}
+
+body main .container .main__body section.section__bottom > ul li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 16px;
+  background: #333333;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  top: -3px;
+}
+
+body main .container .main__body section.section__bottom .avatar__title {
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #000000;
+  letter-spacing: 0.25px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.025em;
+  color: #333333;
+}
+
+.big__picture img, .medium__picture img {
+  width: 100%;
 }

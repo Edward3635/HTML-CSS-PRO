@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=M+PLUS+1&family=Marcellus+SC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Inika', serif;
+  background-color: #fff;
+}
+
+header .header__container {
+  margin: 25px auto 31px auto;
+  max-width: 548px;
+}
+
+header .header__container .header__body {
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.45;
+  letter-spacing: 0.1em;
+  color: #3E45E8;
+}
+
+header .header__container .header__body > span {
+  color: #E8C23E;
+}
+
+main .container .section__title {
+  background: url("../../img/bg.png");
+}
+
+main .container .section__title .title__body {
+  max-width: 1036px;
+  padding: 195px 0 307px 118px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+main .container .section__places .places__body .card__list .card {
+  max-width: 400px;
+}
+
+footer .footer__container .footer__body .soc__media > img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.58;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.575;
+  color: #000000;
+}

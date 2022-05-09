@@ -1,0 +1,83 @@
+@import"./reset";
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=M+PLUS+1&family=Marcellus+SC&display=swap');
+
+//font-family: 'Marcellus SC', serif;
+
+.container{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+img{
+	width: 100%;
+}
+
+body{
+	font-family: 'Inika', serif;
+	background-color: #fff;
+}
+header{
+	.header__container{
+		margin: 25px auto 31px auto;
+		max-width: 548px;
+		.header__body{
+			font-family: 'M PLUS 1', sans-serif;
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 1.45;
+			letter-spacing: 0.1em;
+			color: #3E45E8;
+			&>span{
+				color: #E8C23E;
+			}
+		}
+
+	}
+	
+}
+main{
+	.container{
+		.section__title{
+			background: url("../../img/bg.png");
+			.title__body{
+				max-width: 1036px;
+				padding: 195px 0 307px 118px;
+				box-sizing: content-box;
+			}
+		}
+		.section__places{
+			.places__body{
+				.card__list{
+					.card{
+						max-width: 400px;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	.footer__container{
+		.footer__body{
+			.soc__media{
+				&>img{
+					width: fit-content;
+				}
+			}
+		}
+	}
+}
+
+
+h1{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.58;
+	color: #FFFFFF;
+}
+h2{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.575;
+	color: #000000;
+}

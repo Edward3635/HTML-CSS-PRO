@@ -1,3 +1,425 @@
+/* _reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* style.scss */
 body {
-  background-color: purple;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section__content a:visited {
+  color: #2B4AB4;
+}
+
+.section__article a {
+  color: #2B4AB4;
+}
+
+ol.bottom__ol li a {
+  color: #000;
+  text-decoration: underline;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.375;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+.header__container {
+  max-width: 1396px;
+  margin: 0 auto;
+  padding: 12px 10px;
+}
+
+.header__container .header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container .header__body .header__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container .header__body .header__input .input {
+  margin-right: 32px;
+}
+
+.header__container .header__body .header__input .input input {
+  padding: 12px 176px 14px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #828282;
+  background: url("../../img/loupe.svg") center right 12px no-repeat;
+}
+
+.header__container .header__body .header__input .input input:focus {
+  background: none;
+}
+
+.header__container .header__body .header__input .input input:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+.header__container .header__body .header__input .input input:focus:-ms-input-placeholder {
+  color: white;
+}
+
+.header__container .header__body .header__input .input input:focus::-ms-input-placeholder {
+  color: white;
+}
+
+.header__container .header__body .header__input .input input:focus::placeholder {
+  color: white;
+}
+
+.header__container .header__body .header__input .input__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__container .header__body .header__input .input__buttons .btn__read {
+  margin-right: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #0645AD;
+}
+
+.header__container .header__body .header__input .input__buttons .btn__edit {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header__container .header__body .header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__container .header__body .header__buttons .user__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #333333;
+}
+
+.header__container .header__body .header__buttons .user__btn img {
+  margin-right: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container .header__body .header__buttons .create__or__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__container .header__body .header__buttons .create__or__login .create__acc {
+  margin-right: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #0645AD;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section__chapters .container__chapters {
+  max-width: 235px;
+  background-color: #f6f6f6;
+}
+
+main .section__chapters .container__chapters .chapters__body > img {
+  display: block;
+  margin-bottom: 32px;
+  padding: 0 32px;
+}
+
+main .section__chapters .container__chapters .chapters__body > ul {
+  background-color: #efefef;
+}
+
+main .section__chapters .container__chapters .chapters__body > ul > li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: #333333;
+  border-bottom: 2px solid #fff;
+}
+
+main .section__chapters .container__chapters .chapters__body > ul > li > .li {
+  padding: 8px 0;
+  margin: 0 auto;
+  max-width: 187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section__article .container__article {
+  max-width: 855px;
+  margin: 0 4% 0 4%;
+}
+
+main .section__article .container__article .article__body > h1 {
+  border-bottom: 1px solid #EFEFEF;
+  padding: 62px 0 16px 0;
+  margin-bottom: 32px;
+}
+
+main .section__article .container__article .article__body > h1 + h5 {
+  margin-bottom: 32px;
+}
+
+main .section__article .container__article .article__body > h2, main .section__article .container__article .article__body > .education + h5, main .section__article .container__article .article__body > .references + ul > li:last-child {
+  margin-bottom: 16px;
+}
+
+main .section__article .container__article .article__body > h3 {
+  margin-bottom: 8px;
+}
+
+main .section__article .container__article .article__body > h5 > span.person__name {
+  font-weight: 700;
+}
+
+main .section__article .container__article .article__body > .biography + h5, main .section__article .container__article .article__body > .education__subtitle + h5, main .section__article .container__article .article__body > .supercomputing + h5, main .section__article .container__article .article__body > .accolades ~ h5,
+main .section__article .container__article .article__body > .selected__publications + ul > li:last-child, main .section__article .container__article .article__body > .see__also + ul > li:last-child {
+  margin-bottom: 32px;
+}
+
+main .section__article .container__article .article__body > .external__links + ul > li:last-child {
+  margin-bottom: 64px;
+}
+
+main .section__article .container__article .article__body ol {
+  margin-left: 30px;
+}
+
+main .section__article ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #0B0A05;
+}
+
+main .section__article ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 16px;
+  background: #284ACE;
+  display: inline-block;
+  position: relative;
+  margin-right: 16px;
+  top: -2px;
+}
+
+main .section__content {
+  background-color: #f6f6f6;
+}
+
+main .section__content .container__content {
+  min-width: 352px;
+}
+
+main .section__content .container__content .content__body .img__philip {
+  margin-bottom: 16px;
+}
+
+main .section__content .container__content .content__body .content__title {
+  padding-left: 23px;
+}
+
+main .section__content .container__content .content__body .content__title > .philip__word {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 32px;
+}
+
+main .section__content .container__content .content__body .content__title > h4 {
+  margin-bottom: 16px;
+}
+
+main .section__content .container__content .content__body .content__nav {
+  max-width: 320px;
+  padding-left: 51px;
+}
+
+ol.references li {
+  margin-bottom: 16px;
+}
+
+ol li {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  letter-spacing: 0.06em;
+  color: #000000;
+  counter-increment: item;
+  margin-bottom: 8px;
+}
+
+ol li:first-child {
+  counter-reset: item;
+}
+
+ol li:before {
+  content: counters(item, ".") ". ";
+  position: absolute;
+  margin-right: 100%;
+  right: 10px;
+}
+
+ol li.second__list {
+  padding-left: 33px;
+}
+
+ol li.second__list::before {
+  left: 0;
 }

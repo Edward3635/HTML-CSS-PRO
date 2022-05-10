@@ -139,16 +139,76 @@ body {
   margin-bottom: 67px;
 }
 
-.main__container {
+.main > .container {
   max-width: 1489px;
   margin: 0 auto;
 }
 
+.house__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #bdbdc6;
+}
+
+.house__card:not(.house__card:last-child) {
+  margin-bottom: 36px;
+}
+
+.house__img {
+  padding: 28px 0;
+}
+
+.house__description {
+  max-width: 712px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.house__description .line {
+  border-bottom: 3px solid #fff;
+  margin-bottom: 10px;
+}
+
+.house__text {
+  padding: 21px 24px 28px 23px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  color: #202846;
+  background: #D7D7DD;
+  white-space: pre-line;
+}
+
+.img__star {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+
+.img__star:hover {
+  fill: red;
+}
+
+.btn_details {
+  padding: 15px 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.29;
+  color: #fff;
+  background: #202846;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: -48px;
+}
+
 .footer__text {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
   padding: 22px 0 22px 60px;
   font-style: italic;
   font-weight: 400;
@@ -168,4 +228,12 @@ h1 {
   font-size: 48px;
   line-height: 1.29;
   color: #202846;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  color: #353C57;
 }

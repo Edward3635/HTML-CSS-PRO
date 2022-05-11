@@ -83,6 +83,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #202846;
 }
 
@@ -95,7 +98,6 @@ body {
 }
 
 .nav__logo {
-  margin-right: 293px;
   padding: 10px 0 10px 138px;
 }
 
@@ -110,16 +112,24 @@ body {
 
 .nav__flex > div {
   max-width: 208px;
-  text-align: center;
-  padding: 14px 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.29;
-  color: #FFFFFF;
+  margin-right: 44px;
+  padding-right: 40px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__flex > div:not(div:last-child) {
   border-right: 4px solid #FFF;
+}
+
+.nav__flex > div > h3 {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav__flex > div.planet {
@@ -142,6 +152,16 @@ body {
 .main > .container {
   max-width: 1489px;
   margin: 0 auto;
+}
+
+.up__arrow {
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  bottom: 90px;
+  padding: 29px 40px;
+  border-radius: 100%;
+  background: rgba(85, 87, 104, 0.62);
 }
 
 .house__card {
@@ -177,22 +197,22 @@ body {
 
 .house__text {
   padding: 21px 24px 28px 23px;
+  text-align: center;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.27;
   color: #202846;
   background: #D7D7DD;
-  white-space: pre-line;
 }
 
-.img__star {
+svg {
   position: absolute;
   right: 17px;
   top: 17px;
 }
 
-.img__star:hover {
-  fill: red;
+svg path:hover {
+  fill: gold;
 }
 
 .btn_details {
@@ -236,4 +256,11 @@ h2 {
   font-size: 36px;
   line-height: 1.3;
   color: #353C57;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.29;
+  color: #FFFFFF;
 }

@@ -1,4 +1,9 @@
 @import "./reset";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600;700&display=swap');
+
 body {
-	background: red;
+	background-color: #252C2F;
+}
+.container{
+	max-width: 1440px;
 }

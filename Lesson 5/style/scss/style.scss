@@ -2,8 +2,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600;700&display=swap');
 
 body {
+	font-family: 'Poppins';
+	font-style: normal;
 	background-color: #252C2F;
 }
 .container{
 	max-width: 1440px;
+	margin: 0 auto;
+}
+.header__body{
+	max-width: 1342px;
+	margin: 0 auto 108px auto;
+	padding-top: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo{
+	padding: 8px 0;
+}
+
+.header__nav{
+	max-width: 429px;
+}
+.ul__nav{
+	padding: 10px;
+	display: flex;
+	&>a{
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.5;
+		color: #FFFFFF;
+		&:hover{
+			color: #FFB742;
+		}
+		&:not(a:last-child){
+			margin-right: 25px;
+		}
+	}
+}
+.btn__hire_me{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.66;
+	color: #212529;
+	padding: 12px 26px;
+	border-radius: 30px;
+	background-color: #FFB742;
+}
+
+.main__body{
+	margin-bottom: 116px;
+}
+
+
+.footer__body{
+	padding: 148px 0 90px 0;
+	background-color: #1c1c1c;
+}
+.footer__flex{
+	max-width: 1342px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	& h6{
+		margin-bottom: 15px;
+	}
+	& .work__sans a{
+		font-family: 'Work Sans';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 17.9888px;
+		line-height: 2;
+		color: #7B7B7B;
+		&>li{
+			width: fit-content;
+		}
+	}
+	& a:hover, h6:hover, .author__name:hover{
+		color: #FFB742;
+	}
+	
+}
+.author{
+	max-width: 231px;
+	&__name{
+		margin-bottom: 30px;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 1;
+		color: #D4D4D4;
+
+	}
+	&__activity{
+		font-family: 'Work Sans';
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 2;
+		color: #D4D4D4;
+	}
+}
+.newsletter{
+	max-width: 300px;
+
+}
+
+h6{
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 21.5865px;
+	line-height: 1.49;
+	color: #F5FBF2;
 }

@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'Poppins';
   font-style: normal;
@@ -118,7 +122,7 @@ body a, body button {
 
 .ul__nav > a {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: #FFFFFF;
 }
@@ -135,7 +139,7 @@ body a, body button {
 
 .btn__hire_me {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.66;
   color: #212529;
   padding: 12px 26px;
@@ -156,7 +160,7 @@ body a, body button {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 1.59;
   color: #FFFFFF;
 }
@@ -168,7 +172,7 @@ body a, body button {
 
 .introduce__body .introduce .h1 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 2.125;
 }
 
@@ -221,24 +225,28 @@ body a, body button {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.93;
   color: #FFFFFF;
 }
 
 .introduce__body .statistic__list .list__item .item__body .item__text span.number {
   display: block;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 1.25;
   color: #FFB742;
 }
 
 .introduce__body .statistic__list .list__item:hover {
   background-color: #ffb742;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .introduce__body .statistic__list .list__item:hover .item__text span.number, .introduce__body .statistic__list .list__item:hover .item__text {
   color: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .introduce__body .statistic__list .list__item:hover svg path {
@@ -265,13 +273,13 @@ body a, body button {
   padding-top: 60px;
 }
 
-.works__body {
+.work__body {
   max-width: 1234px;
   margin: 0 auto;
   padding-bottom: 116px;
 }
 
-.works__body .title {
+.work__body .title {
   display: block;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -279,18 +287,18 @@ body a, body button {
   margin: 0 auto 25px auto;
 }
 
-.works__body > h2 {
+.work__body > h2 {
   text-align: center;
   line-height: 1.17;
   margin: 0 auto 30px;
 }
 
-.works__body .works__list {
+.work__body .work__list {
   max-width: 652px;
   margin: 0 auto;
 }
 
-.works__body .works__list ul {
+.work__body .work__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,17 +308,22 @@ body a, body button {
   margin-bottom: 55px;
 }
 
-.works__body .works__list ul li {
+.work__body .work__list ul li {
   padding: 5px 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.875;
   color: #fff;
 }
 
-.works__body .works__list ul li:hover {
+.work__body .work__list ul li:hover {
   color: #000;
   background-color: #ffb742;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
-.test {
+.work__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +340,7 @@ body a, body button {
   color: #FFB742;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 1.5;
 }
 
@@ -355,7 +368,7 @@ body a, body button {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 17.9888px;
+  font-size: 1.798rem;
   line-height: 2;
   color: #7B7B7B;
 }
@@ -379,7 +392,7 @@ body a, body button {
 .author__name {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 1;
   color: #D4D4D4;
 }
@@ -387,7 +400,7 @@ body a, body button {
 .author__activity {
   font-family: 'Work Sans';
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2;
   color: #D4D4D4;
 }
@@ -400,7 +413,7 @@ h1 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 1.9;
 }
 
@@ -408,7 +421,7 @@ h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 0.625;
   color: #FFFFFF;
   margin-bottom: 30px;
@@ -416,7 +429,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.875;
   color: #D5D5D5;
   margin-bottom: 66px;
@@ -426,7 +439,7 @@ h6 {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 21.5865px;
+  font-size: 2.16rem;
   line-height: 1.49;
   color: #F5FBF2;
 }

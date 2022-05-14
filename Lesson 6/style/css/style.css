@@ -76,5 +76,47 @@ html {
 
 body {
   font-family: 'Public Sans', sans-serif;
-  background: brown;
+}
+
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #ffdfc4;
+}
+
+.main .container {
+  min-width: 700px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.main__body {
+  color: #171717;
+  padding: 64px 44px 110px;
+}
+
+.main h1 {
+  padding-left: 4px;
+  margin-bottom: 79px;
+}
+
+.main h2 {
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.17;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43rem;
+}
+
+.red__span {
+  color: #D83933;
 }

@@ -21,48 +21,192 @@
 				</h3>
 				<form>
 					<div class="form">
-						<h2>Information</h2>
-						<div class="input__flex">
-							<div class="select">
-								<label for="intake__type">
-									Intake Type<span class="red__span">* (select)</span>
-								</label>
-								<select id="intake__type">
-									<option selected value="Referral">Referral</option>
-									<option value="Pending">Pending</option>
-									<option value="Accused">Accused</option>
-									<option value="Agency">Agency</option>
-								</select>
+						<div class="information__block">
+							<h2>Information</h2>
+							<div class="input__flex">
+								<div class="select">
+									<label for="intake__type">
+										Intake Type<span class="red__span">* (select)</span>
+									</label>
+									<select id="intake__type" required>
+										<option selected value="Referral">Referral</option>
+										<option value="Pending">Pending</option>
+										<option value="Accused">Accused</option>
+										<option value="Agency">Agency</option>
+									</select>
+								</div>
+								<div class="input">
+									<label for="initial__date">Enrollment Initiation Date (Optional)</label>
+									<input class="read__only" type="date" id="initial__date" value="2021-11-05"
+										min="2021-11-05" max="2021-11-05">
+								</div>
+								<div class="input">
+									<label for="phone">phone</label>
+									<input type="tel" id="phone" required>
+								</div>
+								<div class="input">
+									<label for="application">Application Category
+										<span class="red__span">*</span>
+									</label>
+									<select id="application" required>
+										<option selected value="Child Support">Child Support</option>
+										<option value="Popular">Popular</option>
+										<option value="Buttons">Buttons</option>
+										<option value="Article">Article</option>
+										<option value="Games">Games</option>
+									</select>
+								</div>
+								<div class="input">
+									<label for="email">email</label>
+									<input type="email" id="email" required>
+								</div>
+								<div class="input">
+									<label for="submission__date">Enrollment Submission Date (Optional)</label>
+									<input class="read__only" type="date" id="submission__date" value="2021-11-05"
+										min="2021-11-05" max="2021-11-05">
+								</div>
 							</div>
-							<div class="input">
-								<label for="initial__date">Enrollment Initiation Date (Optional)</label>
-								<input class="read__only" type="date" id="initial__date" value="2021-11-05"
-									min="2021-11-05" max="2021-11-05">
-							</div>
-							<div class="input">
-								<label for="phone">phone</label>
-								<input type="tel" id="phone">
-							</div>
-							<div class="input">
-								<label for="application">Application Category<span class="red__span">*</span></label>
-								<select id="application">
-									<option selected value="Child Support">Child Support</option>
-									<option value="Popular">Popular</option>
-									<option value="Buttons">Buttons</option>
-									<option value="Article">Article</option>
-									<option value="Games">Games</option>
-								</select>
-							</div>
-							<div class="input">
-								<label for="email">email</label>
-								<input type="email" id="email">
-							</div>
-							<div class="input">
-								<label for="submission__date">Enrollment Submission Date (Optional)</label>
-								<input class="read__only" type="date" id="submission__date" value="2021-11-05"
-									min="2021-11-05" max="2021-11-05">
+							<div class="input__flex2">
+								<div class="block1">
+									<label for="application__reg">Application Registration (Optional)</label>
+									<input class="input__blue" type="text" id="application__reg" value="APP0000116">
+									<label for="requested__date">Additional Information Requested Date
+										(Optional)</label>
+									<input type="date" id="requested__date" value="2021-05-13">
+									<label for="remaining__days">Remaining Days Before Referral is Purged
+										(Optional)</label>
+									<input class="background__arrow" type="text" id="remaining__days" value="13">
+									<label for="payment__date">Fee Payment Date (Optional)</label>
+									<input type="date" id="payment__date" value="2021-05-13">
+									<div class="block__checkbox">
+										<input class="checkbox1" type="checkbox" id="checkbox1" checked>
+										<label class="label__checkbox" for="checkbox1">Application Fee Processed</label>
+									</div>
+								</div>
+								<div class="block2">
+									<div class="block__checkbox">
+										<input class="checkbox1" type="checkbox" id="checkbox2">
+										<label class="label__checkbox" for="checkbox2">Purged</label>
+									</div>
+									<label for="exempt">Exempt from Paternity (Optional) <span
+											class="red__span">(select)</span></label>
+									<select id="exempt">
+										<option selected value="No">No</option>
+										<option value="Yes">Yes</option>
+										<option value="May be">May be</option>
+										<option value="I don't know">I don't know</option>
+									</select>
+									<label for="enrollment__status">Enrollment Status (Optional)</label>
+									<input class="background__arrow" value="Worklisted" type="text"
+										id="enrollment__status">
+								</div>
 							</div>
 						</div>
+						<div class="maternity__information">
+							<h2>Maternity Information</h2>
+							<div class="input__flex2">
+								<div class="block__checkbox">
+									<input class="checkbox1" type="checkbox" id="request__support">
+									<label class="label__checkbox" for="request__support">Are you requesting child
+										support services for an unborn child?</label>
+								</div>
+								<div class="block3">
+									<label for="biological__parent">Other known biological parent? (Optional)</label>
+									<input class="background__arrow" type="text" id="biological__parent" value="None">
+								</div>
+							</div>
+						</div>
+						<div class="official__use">
+							<h2>Official Use</h2>
+							<div class="input__flex">
+								<div>
+									<label for="case__category">Case Category (Optional)</label>
+									<input class="background__arrow" type="text" id="case__category"
+										value="Active IV-A">
+								</div>
+								<div>
+									<label for="ivd__indicator">
+										IV-D Indicator <span class="red__span">*</span>
+									</label>
+									<select id="ivd__indicator" required>
+										<option selected value="Pending">Non-IV-D</option>
+										<option value="Pending">IV-D</option>
+										<option value="Pending">D</option>
+										<option value="Pending">D-TV-I</option>
+
+									</select>
+								</div>
+								<div>
+									<label for="arrears__indicator">Arrears Only Indicator (Optional)</label>
+									<input class="background__arrow" type="text" id="arrears__indicator"
+										placeholder="None">
+								</div>
+								<div>
+									<label for="intergovernmental">Intergovernmental Case Category (Optional)</label>
+									<input class="background__arrow" type="text" id="intergovernmental"
+										placeholder="None">
+								</div>
+								<div>
+									<label for="ownership">Assigned County of Ownership (Optional)</label>
+									<input class="background__arrow" type="text" id="ownership" placeholder="None">
+								</div>
+								<div>
+									<label for="intergovernmental__type">Intergovernmental Case Type (Optional)</label>
+									<input class="background__arrow" type="text" id="intergovernmental__type"
+										placeholder="None">
+								</div>
+								<div>
+									<label for="case__status">Intergovermental Case Status (Optional)</label>
+									<input class="background__arrow" type="text" id="case__status" placeholder="None">
+								</div>
+								<div>
+									<label for="case__number">Case Number</label>
+									<input class="background__loupe" type="text" id="case__number"
+										placeholder="Search Case Number" required>
+								</div>
+								<div>
+									<label for="handling__indicator">Special Handling Indicator for Applicant
+										(Optional)</label>
+									<input class="background__arrow" type="text" id="handling__indicator"
+										placeholder="None">
+								</div>
+								<div>
+									<label for="referral__number">Referral Number</label>
+									<input class="background__loupe" type="text" id="referral__number"
+										placeholder="Search Case Number" required>
+								</div>
+								<div>
+									<label for="other__parent">Special Handling Indicator for Other Parent
+										(Optional)</label>
+									<input class="background__arrow" type="text" id="other__parent" placeholder="None">
+								</div>
+							</div>
+						</div>
+						<div class="system__information">
+							<h2>System Information</h2>
+							<div class="input__flex">
+								<div>
+									<label for="enrollment__user">Enrollment Taken by User (Optional)</label>
+									<input class="background__loupe" type="text" id="enrollment__user"
+										value="Search Input">
+								</div>
+								<div>
+									<label for="intake__supervisor">Intake Supervisor (Optional)</label>
+									<input class="background__loupe" type="text" id="intake__supervisor"
+										placeholder="Search">
+								</div>
+								<div>
+									<label for="worker">Worker (Optional)</label>
+									<input class="background__loupe" type="text" id="worker" value="Search Input">
+								</div>
+								<div>
+									<label for="owner">Owner (Optional)</label>
+									<input class="background__loupe input__blue" type="text" id="owner"
+										value="Rajaneesh Banal">
+								</div>
+							</div>
+						</div>
+						<button class="btn__next">Next</button>
 					</div>
 				</form>
 			</div>

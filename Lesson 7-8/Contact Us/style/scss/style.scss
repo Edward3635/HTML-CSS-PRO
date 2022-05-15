@@ -1,4 +1,11 @@
 @import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,700;1,600;1,700&display=swap");
+
+html {
+	font-size: 10px;
+}
+
 body {
+	font-family: "Rosario", sans-serif;
 	background: red;
 }

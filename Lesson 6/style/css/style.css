@@ -75,7 +75,26 @@ html {
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.375;
+}
+
+input {
+  height: 40px;
+}
+
+select {
+  padding: 9px 0;
+}
+
+select,
+input {
+  border: 1px solid #adadad;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.6rem;
 }
 
 .main {
@@ -105,6 +124,37 @@ body {
   margin-bottom: 24px;
 }
 
+.main .form .input__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 22px;
+}
+
+.main .form .input,
+.main .form .select {
+  width: 43%;
+}
+
+.main .form .read__only {
+  background-color: #f9f9f9;
+  color: gray;
+}
+
+.main .form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin-right: 8px;
+}
+
 h1 {
   font-weight: 700;
   font-size: 2.4rem;
@@ -115,14 +165,15 @@ h2 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.2;
+  margin-bottom: 32px;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.43rem;
+  font-size: 1.4rem;
+  line-height: 1.43;
 }
 
 .red__span {
-  color: #D83933;
+  color: #d83933;
 }

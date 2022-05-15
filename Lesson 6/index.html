@@ -22,6 +22,47 @@
 				<form>
 					<div class="form">
 						<h2>Information</h2>
+						<div class="input__flex">
+							<div class="select">
+								<label for="intake__type">
+									Intake Type<span class="red__span">* (select)</span>
+								</label>
+								<select id="intake__type">
+									<option selected value="Referral">Referral</option>
+									<option value="Pending">Pending</option>
+									<option value="Accused">Accused</option>
+									<option value="Agency">Agency</option>
+								</select>
+							</div>
+							<div class="input">
+								<label for="initial__date">Enrollment Initiation Date (Optional)</label>
+								<input class="read__only" type="date" id="initial__date" value="2021-11-05"
+									min="2021-11-05" max="2021-11-05">
+							</div>
+							<div class="input">
+								<label for="phone">phone</label>
+								<input type="tel" id="phone">
+							</div>
+							<div class="input">
+								<label for="application">Application Category<span class="red__span">*</span></label>
+								<select id="application">
+									<option selected value="Child Support">Child Support</option>
+									<option value="Popular">Popular</option>
+									<option value="Buttons">Buttons</option>
+									<option value="Article">Article</option>
+									<option value="Games">Games</option>
+								</select>
+							</div>
+							<div class="input">
+								<label for="email">email</label>
+								<input type="email" id="email">
+							</div>
+							<div class="input">
+								<label for="submission__date">Enrollment Submission Date (Optional)</label>
+								<input class="read__only" type="date" id="submission__date" value="2021-11-05"
+									min="2021-11-05" max="2021-11-05">
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>

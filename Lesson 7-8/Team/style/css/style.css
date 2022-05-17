@@ -81,3 +81,57 @@ body {
   line-height: 1.22;
   background-color: red;
 }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header .container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #000;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__logo {
+  background-color: #fffbfb;
+}
+
+header .header__nav {
+  width: 1024px;
+  margin-right: 16px;
+}
+
+header .header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1024px;
+}
+
+header .header .navigation h6 {
+  color: #fffcfc;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.22;
+  color: #fffcfc;
+}

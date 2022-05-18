@@ -14,29 +14,17 @@
 		<div class="container">
 			<div class="header">
 				<div class="header__logo">
-					<img src="./img/logo.svg" alt="logo">
+					<a href="#"><img src="./img/logo.svg" alt="logo"></a>
 				</div>
 				<div class="header__nav">
-					<nav class="navigation">
-						<a href="#">
-							<h6>Appointment</h6>
-						</a>
-						<a href="#">
-							<h6>Gallery</h6>
-						</a>
-						<a href="#">
-							<h6>Services</h6>
-						</a>
-						<a href="#">
-							<h6>Team</h6>
-						</a>
-						<a href="#">
-							<h6>Reviews</h6>
-						</a>
-						<a href="#">
-							<h6>Contact</h6>
-						</a>
-					</nav>
+					<ul class="navigation">
+						<li><a href="#">Appointment</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -45,28 +33,135 @@
 		<div class="container">
 			<div class="main">
 				<div class="main__body">
-					<div class="gallery">
-						<div class="img__left">
-							<img src="./img/img_left.png" alt="img">
-						</div>
-						<div class="gallery__center">
-							<div class="center__left">
-								<img src="./img/top_left.png" alt="img">
-								<img src="./img/bottom_left.png" alt="img">
+					<section class="section__gallery">
+						<div class="gallery">
+							<div class="img__left">
+								<img src="./img/img_left.png" alt="img">
 							</div>
-							<div class="center__right">
-								<img src="./img/top_right.png" alt="img">
-								<img src="./img/bottom_right.png" alt="img">
+							<div class="gallery__center">
+								<div class="center__left">
+									<img src="./img/top_left.png" alt="img">
+									<img src="./img/bottom_left.png" alt="img">
+								</div>
+								<div class="center__right">
+									<img src="./img/top_right.png" alt="img">
+									<img src="./img/bottom_right.png" alt="img">
+								</div>
+							</div>
+							<div class="img__right">
+								<img src="./img/img_right.png" alt="img">
 							</div>
 						</div>
-						<div class="img__right">
-							<img src="./img/img_right.png" alt="img">
+					</section>
+					<section class="section__services">
+						<div class="services">
+							<div class="service__samples">
+								<div class="hair__styling">
+									<img src="./img/hair__styling.png" alt="hair__straightening">
+									<h3>Hair Styling</h3>
+								</div>
+								<div class="beard__trimming">
+									<img src="./img/beard__trimming.png" alt="beard__trimming">
+									<h3>Beard Trimming</h3>
+								</div>
+								<div class="smooth__shave">
+									<img src="./img/smooth__shave.png" alt="smooth__shave">
+									<h3>Smooth Shave</h3>
+								</div>
+								<div class="hair__straightening">
+									<img src="./img/hair__straightening.png" alt="hair__straightening">
+									<h3>Hair Straightening</h3>
+								</div>
+							</div>
+							<div class="service__img">
+								<img src="./img/service__img.png" alt="service__img">
+							</div>
 						</div>
-					</div>
+					</section>
+					<section class="section__team">
+						<div class="team">
+							<h1 id="team">Meet Our Highly Skilled Experts</h1>
+							<div class="team__card">
+								<div class="card__item1">
+									<div class="teammate1"><img src="./img/teammate1.png" alt="card__item1"></div>
+									<div class="teammate2"><img src="./img/teammate2.png" alt="card__item2"></div>
+								</div>
+								<div class="card__item2">
+									<div class="teammate3"><img src="./img/teammate3.png" alt="card__item3"></div>
+									<div class="teammate4"><img src="./img/teammate4.png" alt="card__item4"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section__contact">
+						<div class="contact__us">
+							<div class="contact__message">
+								<h2>Get in touch with Us and send a Message </h2>
+								<form>
+									<div class="form__input">
+										<div class="input1">
+											<input type="text" placeholder="Name">
+										</div>
+										<div class="input2">
+											<input type="email" placeholder="Email">
+										</div>
+									</div>
+									<div class="textarea"><textarea placeholder="Message"></textarea></div>
+								</form>
+							</div>
+							<div class="google__map">
+								<iframe class="iframe__map"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10747.840808965995!2d77.62854590096077!3d12.92347766961156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1460d6dc96bb%3A0xf75026df2b445449!2sWipro%20Park%20Koramangala!5e0!3m2!1sru!2sua!4v1652876826653!5m2!1sru!2sua"
+									width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
 	</main>
+	<footer>
+		<div class="container">
+			<div class="footer">
+				<div class="footer__body">
+					<div class="footer__contacts">
+						<ul>
+							<li><a href="mailto:kumarpratiyush1405@gmail.com"><span class="span__footer">Email</span> :
+									kumarpratiyush1405@gmail.com</a>
+							</li>
+							<li><a href="tel:+(972)723429834"> <span class="span__footer">Phone</span> : +(972)
+									723429834</a></li>
+							<li><a href="#"> <span class="span__footer">Headquarters</span> : 836th Avenue, 3rd Floor,
+									New York,</a></li>
+							<li><a href="#">New York</a></li>
+						</ul>
+					</div>
+					<div class="opening__hours">
+						<h4>Opening Hours</h4>
+						<ul>
+							<li>Monday - Friday : 10:00 am - 05:00 pm</li>
+							<li>Saturday : 10:00 am - 02:00 pm</li>
+						</ul>
+					</div>
+					<div class="media">
+						<h4>Connect With Us On</h4>
+						<ul>
+							<li><a href="https://www.instagram.com/" target="_blank">
+									<img class="img__media" src="./img/inst.svg" alt="inst">
+									Instagram</a></li>
+							<li><a href="https://www.facebook.com/" target="_blank">
+									<img class="img__media" src="./img/facebook.svg" alt="inst">
+									Facebook</a></li>
+							<li><a href="https://twitter.com/?lang=ru" target="_blank">
+									<img class="img__media" src="./img/twitter.svg" alt="inst">
+									Twitter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

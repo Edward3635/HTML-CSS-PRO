@@ -19,11 +19,11 @@
 				<div class="header__nav">
 					<ul class="navigation">
 						<li><a href="#">Appointment</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Services</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#services">Services</a></li>
 						<li><a href="#team">Team</a></li>
 						<li><a href="#">Reviews</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -36,7 +36,7 @@
 					<section class="section__gallery">
 						<div class="gallery">
 							<div class="img__left">
-								<img src="./img/img_left.png" alt="img">
+								<img id="gallery" src="./img/img_left.png" alt="img">
 							</div>
 							<div class="gallery__center">
 								<div class="center__left">
@@ -74,7 +74,7 @@
 								</div>
 							</div>
 							<div class="service__img">
-								<img src="./img/service__img.png" alt="service__img">
+								<img id="services" src="./img/service__img.png" alt="service__img">
 							</div>
 						</div>
 					</section>
@@ -96,7 +96,7 @@
 					<section class="section__contact">
 						<div class="contact__us">
 							<div class="contact__message">
-								<h2>Get in touch with Us and send a Message </h2>
+								<h2 id="contact">Get in touch with Us and send a Message </h2>
 								<form>
 									<div class="form__input">
 										<div class="input1">
@@ -146,17 +146,37 @@
 					</div>
 					<div class="media">
 						<h4>Connect With Us On</h4>
-						<ul>
-							<li><a href="https://www.instagram.com/" target="_blank">
+						<div class="connect__flex">
+							<div class="media__flex">
+								<a href="https://www.instagram.com/" target="_blank">
 									<img class="img__media" src="./img/inst.svg" alt="inst">
-									Instagram</a></li>
-							<li><a href="https://www.facebook.com/" target="_blank">
-									<img class="img__media" src="./img/facebook.svg" alt="inst">
-									Facebook</a></li>
-							<li><a href="https://twitter.com/?lang=ru" target="_blank">
-									<img class="img__media" src="./img/twitter.svg" alt="inst">
-									Twitter</a></li>
-						</ul>
+								</a>
+								<a href="https://www.facebook.com/" target="_blank">
+									<img class="img__media" src="./img/facebook.svg" alt="facebook">
+								</a>
+								<a href="https://twitter.com/?lang=ru" target="_blank">
+									<img class="img__media" src="./img/twitter.svg" alt="twitter">
+								</a>
+							</div>
+							<ul>
+								<li>
+									<a href="https://www.instagram.com/" target="_blank">
+										Instagram
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/" target="_blank">
+										Facebook
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/?lang=ru" target="_blank">
+										Twitter
+									</a>
+								</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</div>

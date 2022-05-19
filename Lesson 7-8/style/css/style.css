@@ -527,12 +527,12 @@ h4 {
   0% {
   }
   25% {
-    -webkit-transform: translateX(124%);
-            transform: translateX(124%);
+    -webkit-transform: translateX(140%);
+            transform: translateX(140%);
   }
   50% {
-    -webkit-transform: translate(124%, 100%);
-            transform: translate(124%, 100%);
+    -webkit-transform: translate(140%, 100%);
+            transform: translate(140%, 100%);
   }
   75% {
     -webkit-transform: translate(0, 100%);
@@ -546,12 +546,12 @@ h4 {
   0% {
   }
   25% {
-    -webkit-transform: translateX(124%);
-            transform: translateX(124%);
+    -webkit-transform: translateX(140%);
+            transform: translateX(140%);
   }
   50% {
-    -webkit-transform: translate(124%, 100%);
-            transform: translate(124%, 100%);
+    -webkit-transform: translate(140%, 100%);
+            transform: translate(140%, 100%);
   }
   75% {
     -webkit-transform: translate(0, 100%);
@@ -569,12 +569,12 @@ h4 {
             transform: translateY(100%);
   }
   50% {
-    -webkit-transform: translate(-124%, 100%);
-            transform: translate(-124%, 100%);
+    -webkit-transform: translate(-140%, 100%);
+            transform: translate(-140%, 100%);
   }
   75% {
-    -webkit-transform: translate(-124%, 0);
-            transform: translate(-124%, 0);
+    -webkit-transform: translate(-140%, 0);
+            transform: translate(-140%, 0);
   }
   100% {
   }
@@ -588,12 +588,12 @@ h4 {
             transform: translateY(100%);
   }
   50% {
-    -webkit-transform: translate(-124%, 100%);
-            transform: translate(-124%, 100%);
+    -webkit-transform: translate(-140%, 100%);
+            transform: translate(-140%, 100%);
   }
   75% {
-    -webkit-transform: translate(-124%, 0);
-            transform: translate(-124%, 0);
+    -webkit-transform: translate(-140%, 0);
+            transform: translate(-140%, 0);
   }
   100% {
   }
@@ -607,12 +607,12 @@ h4 {
             transform: translateY(-100%);
   }
   50% {
-    -webkit-transform: translate(124%, -100%);
-            transform: translate(124%, -100%);
+    -webkit-transform: translate(140%, -100%);
+            transform: translate(140%, -100%);
   }
   75% {
-    -webkit-transform: translate(124%, 0);
-            transform: translate(124%, 0);
+    -webkit-transform: translate(140%, 0);
+            transform: translate(140%, 0);
   }
   100% {
   }
@@ -626,12 +626,12 @@ h4 {
             transform: translateY(-100%);
   }
   50% {
-    -webkit-transform: translate(124%, -100%);
-            transform: translate(124%, -100%);
+    -webkit-transform: translate(140%, -100%);
+            transform: translate(140%, -100%);
   }
   75% {
-    -webkit-transform: translate(124%, 0);
-            transform: translate(124%, 0);
+    -webkit-transform: translate(140%, 0);
+            transform: translate(140%, 0);
   }
   100% {
   }
@@ -641,12 +641,12 @@ h4 {
   0% {
   }
   25% {
-    -webkit-transform: translateX(-124%);
-            transform: translateX(-124%);
+    -webkit-transform: translateX(-140%);
+            transform: translateX(-140%);
   }
   50% {
-    -webkit-transform: translate(-124%, -100%);
-            transform: translate(-124%, -100%);
+    -webkit-transform: translate(-140%, -100%);
+            transform: translate(-140%, -100%);
   }
   75% {
     -webkit-transform: translate(0, -100%);
@@ -660,12 +660,12 @@ h4 {
   0% {
   }
   25% {
-    -webkit-transform: translateX(-124%);
-            transform: translateX(-124%);
+    -webkit-transform: translateX(-140%);
+            transform: translateX(-140%);
   }
   50% {
-    -webkit-transform: translate(-124%, -100%);
-            transform: translate(-124%, -100%);
+    -webkit-transform: translate(-140%, -100%);
+            transform: translate(-140%, -100%);
   }
   75% {
     -webkit-transform: translate(0, -100%);
@@ -760,11 +760,26 @@ textarea:focus::placeholder {
   max-width: 390px;
 }
 
-.footer__body .media img {
-  margin-right: 10px;
-  vertical-align: middle;
+.footer__body .connect__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.footer__body .media li {
-  padding-left: 60px;
+.footer__body .connect__flex .media__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  margin-right: 10px;
 }

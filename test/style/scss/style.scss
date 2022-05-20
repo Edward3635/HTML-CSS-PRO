@@ -2,16 +2,16 @@ body {
 	background: blanchedalmond;
 }
 
-main{
+main {
 	margin: 30px auto;
 	max-width: 900px;
 }
 
-.grid{
+.grid {
 	display: grid;
-	grid-template-columns: repeat(3,1fr); // на цю команду в css з'являється 5 помилок, але код всеодно працює.
+	grid-template-columns: repeat(3, 1fr); // на цю команду в css з'являється 5 помилок, але код всеодно працює.
 	gap: 20px;
-	>div{
+	> div {
 		height: 100px;
 		background-color: aqua;
 	}

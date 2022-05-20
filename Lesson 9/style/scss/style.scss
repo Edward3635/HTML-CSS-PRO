@@ -435,3 +435,21 @@ textarea:focus::placeholder {
 		}
 	}
 }
+
+@media (min-width: 1620px) {
+	.container {
+		max-width: 1920px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: none;
+	}
+}

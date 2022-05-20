@@ -6,7 +6,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -148,25 +147,16 @@ input {
 }
 
 .main .form .input__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 22px;
   margin-bottom: 22px;
 }
 
 .main .form .input__flex2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .main .form .input__flex2 > .block__checkbox {
@@ -205,8 +195,6 @@ input {
 }
 
 .main .form .block__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 

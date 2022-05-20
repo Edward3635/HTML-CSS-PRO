@@ -6,7 +6,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -94,15 +93,9 @@ body a, body button {
   max-width: 1342px;
   margin: 0 auto 108px auto;
   padding-top: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo {
@@ -115,8 +108,6 @@ body a, body button {
 
 .ul__nav {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -128,7 +119,6 @@ body a, body button {
 }
 
 .ul__nav > a:hover {
-  -webkit-transition: all .4s;
   transition: all .4s;
   color: #FFB742;
 }
@@ -177,12 +167,8 @@ body a, body button {
 }
 
 .introduce__body .statistic__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .introduce__body .statistic__list .list__item {
@@ -192,15 +178,9 @@ body a, body button {
 }
 
 .introduce__body .statistic__list .list__item .item__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .introduce__body .statistic__list .list__item .item__body .item__emblem {
@@ -215,8 +195,7 @@ body a, body button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .introduce__body .statistic__list .list__item .item__body .item__text {
@@ -239,13 +218,11 @@ body a, body button {
 
 .introduce__body .statistic__list .list__item:hover {
   background-color: #ffb742;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
 .introduce__body .statistic__list .list__item:hover .item__text span.number, .introduce__body .statistic__list .list__item:hover .item__text {
   color: #000;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -259,12 +236,8 @@ body a, body button {
 }
 
 .section__about .about__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 65px;
 }
 
@@ -281,8 +254,6 @@ body a, body button {
 
 .work__body .title {
   display: block;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 0 auto 25px auto;
 }
@@ -299,12 +270,8 @@ body a, body button {
 }
 
 .work__body .work__list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 55px;
 }
 
@@ -319,16 +286,12 @@ body a, body button {
 .work__body .work__list ul li:hover {
   color: #000;
   background-color: #ffb742;
-  -webkit-transition: all .8s;
   transition: all .8s;
 }
 
 .work__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 31px;
 }
 
@@ -352,12 +315,8 @@ body a, body button {
 .footer__flex {
   max-width: 1342px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__flex h6 {
@@ -374,14 +333,11 @@ body a, body button {
 }
 
 .footer__flex .work__sans a > li {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
 .footer__flex a:active, .footer__flex h6:active, .footer__flex .author__name:active {
   color: #FFB742;
-  -webkit-transition: all .4s;
   transition: all .4s;
 }
 

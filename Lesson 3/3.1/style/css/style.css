@@ -5,7 +5,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -72,8 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 main .main__body {
   max-width: 805px;
   margin: 25px auto 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 25px;
   padding-bottom: 25px;
@@ -92,27 +89,23 @@ main .main__body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .column_1 .left__smile, .column_2 .left__smile {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .column_1 .right__plane, .column_2 .right__plane {
   position: absolute;
   top: 100%;
   right: 0%;
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+  transform: translate(0, -100%);
 }
 
 .column_1 > div {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2137fc), color-stop(50%, #ffce22));
   background: linear-gradient(180deg, #2137fc 50%, #ffce22 50%);
   position: relative;
 }
@@ -129,9 +122,7 @@ main .main__body {
   position: relative;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2137fc), color-stop(50%, #ffce22));
+  transform: translate(-50%, -50%);
   background: linear-gradient(180deg, #2137fc 50%, #ffce22 50%);
 }
 
@@ -139,17 +130,12 @@ main .main__body {
   position: absolute;
   top: 90%;
   left: 50%;
-  -webkit-transform: translate(-50%, -90%);
-          transform: translate(-50%, -90%);
+  transform: translate(-50%, -90%);
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 .row > div {
@@ -167,23 +153,20 @@ main .main__body {
   position: absolute;
   left: 50%;
   top: 40%;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
 }
 
 .row > div .flag {
   position: absolute;
   width: 20px;
   height: 15px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2137fc), color-stop(50%, #ffce22));
   background: linear-gradient(180deg, #2137fc 50%, #ffce22 50%);
 }
 
 .row > div .flag1 {
   left: 50%;
   top: 80%;
-  -webkit-transform: translate(-50%, -80%);
-          transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
 }
 
 .row > div .flag2, .row > div .flag3 {

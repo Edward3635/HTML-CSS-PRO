@@ -6,7 +6,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -81,8 +80,6 @@ body main .container {
 }
 
 body main .container .main__body section.big__picture > .position > h3.pos__center, body main .container .main__body section.medium__picture > .position > h3.pos__center {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }

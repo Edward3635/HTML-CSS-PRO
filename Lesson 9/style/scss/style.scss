@@ -29,6 +29,9 @@ header {
 		&__logo {
 			background-color: #fffbfb;
 		}
+		&__burger {
+			display: none;
+		}
 		&__nav {
 			width: 1024px;
 			margin-right: 16px;
@@ -473,6 +476,7 @@ textarea:focus::placeholder {
 img {
 	max-width: 100%;
 }
+
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 5px;
@@ -486,6 +490,76 @@ img {
 		}
 		.header__logo {
 			max-width: 15%;
+		}
+		.header__burger {
+			display: block;
+			.label__burger {
+				img {
+					transition: all 0.7s;
+				}
+			}
+			#burger {
+				display: none;
+				&:checked {
+					~ .label__burger {
+						img {
+							transform: rotate(-90deg);
+							transition: all 0.7s;
+						}
+					}
+					~ .burger__nav {
+						max-height: 100vh;
+					}
+				}
+			}
+			.label__burger {
+				display: block;
+				position: absolute;
+				top: 22%;
+				left: 93%;
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+			}
+			.burger__nav {
+				display: block;
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				transform: translateY(100%);
+				max-height: 0;
+				font-size: 0;
+				transition: all 0.7s;
+				background-color: #000;
+				opacity: 0.85;
+				height: 100vh;
+				overflow: auto;
+				> li {
+					text-align: center;
+					transition: all 0.7s;
+					&:hover {
+						transform: scale(1.2, 1.2);
+						transition: all 0.7s;
+					}
+					> a {
+						font-weight: 700;
+						font-size: 4rem;
+						line-height: 3;
+						color: #fffcfc;
+						width: 100%;
+						transition: all 0.7s;
+						border-bottom: 1px solid brown;
+						&:hover {
+							color: #ffd700;
+							transition: all 0.7s;
+						}
+					}
+				}
+			}
+		}
+		.header__nav {
+			display: none;
 		}
 		.header {
 			.navigation {
@@ -607,6 +681,7 @@ img {
 		}
 	}
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	html {
 		font-size: 7px;

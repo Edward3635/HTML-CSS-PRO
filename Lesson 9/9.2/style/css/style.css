@@ -639,9 +639,7 @@ img {
     display: block;
     position: absolute;
     top: 22%;
-    left: 93%;
-    width: 100%;
-    height: 100%;
+    right: 3%;
     cursor: pointer;
   }
   header .header__burger .burger__nav {
@@ -743,7 +741,7 @@ img {
     max-width: 60%;
   }
   .main .main__body .team .team__card .teammate .mate__name {
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 38px 38px;
   }
   .main .main__body .team .team__card .teammate img {
     height: 100%;

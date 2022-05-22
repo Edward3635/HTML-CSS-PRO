@@ -1,0 +1,100 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.142;
+	color: #000;
+}
+h1 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+}
+h2 {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+}
+h3 {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+}
+.container {
+	min-width: 820px;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #f9e0ca;
+}
+.main {
+	.main__body {
+		padding: 90px 0;
+		.grid {
+			margin: 0 auto;
+			padding: 27px 43px;
+			max-width: 755px;
+			display: grid;
+			gap: 19px;
+			grid-template-columns: 250px 400px;
+			grid-template-rows: 399px;
+			background-color: #ffb084;
+			.boy {
+				display: grid;
+				grid-template-rows: 319px 62px;
+				row-gap: 18px;
+			}
+			.description {
+				display: grid;
+				grid-template-columns: 400px;
+				grid-template-rows: 117px 268px;
+				row-gap: 14px;
+				.other__puncts {
+					display: grid;
+					column-gap: 22px;
+					grid-template-columns: 189px 189px;
+					.goal__dream {
+						display: grid;
+						row-gap: 16px;
+						grid-template-rows: 101px 151px;
+						.goals {
+							box-shadow: 7px 7px 0px #29a71e;
+							> h2 {
+								color: #29a71e;
+							}
+						}
+						.dream__companies {
+							box-shadow: 7px 7px 0px #3675b0;
+							> h2 {
+								color: #3675b0;
+							}
+						}
+					}
+					.frustration__personality {
+						display: grid;
+						row-gap: 14px;
+						grid-template-rows: 165px 89px;
+						.frustrations {
+							box-shadow: 7px 7px 0px #e13535;
+							> h2 {
+								color: #e13535;
+							}
+						}
+					}
+				}
+			}
+		}
+		.cell {
+			background-color: #fff;
+			box-shadow: 7px 7px 0px #000000;
+			border-radius: 20px;
+		}
+	}
+}

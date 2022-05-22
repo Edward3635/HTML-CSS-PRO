@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.142;
+  color: #000;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.container {
+  min-width: 820px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9e0ca;
+}
+
+.main .main__body {
+  padding: 90px 0;
+}
+
+.main .main__body .grid {
+  margin: 0 auto;
+  padding: 27px 43px;
+  max-width: 755px;
+  display: grid;
+  gap: 19px;
+  grid-template-columns: 250px 400px;
+  grid-template-rows: 399px;
+  background-color: #ffb084;
+}
+
+.main .main__body .grid .boy {
+  display: grid;
+  grid-template-rows: 319px 62px;
+  row-gap: 18px;
+}
+
+.main .main__body .grid .description {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 117px 268px;
+  row-gap: 14px;
+}
+
+.main .main__body .grid .description .other__puncts {
+  display: grid;
+  column-gap: 22px;
+  grid-template-columns: 189px 189px;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream {
+  display: grid;
+  row-gap: 16px;
+  grid-template-rows: 101px 151px;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream .goals {
+  box-shadow: 7px 7px 0px #29a71e;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream .goals > h2 {
+  color: #29a71e;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream .dream__companies {
+  box-shadow: 7px 7px 0px #3675b0;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream .dream__companies > h2 {
+  color: #3675b0;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality {
+  display: grid;
+  row-gap: 14px;
+  grid-template-rows: 165px 89px;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality .frustrations {
+  box-shadow: 7px 7px 0px #e13535;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality .frustrations > h2 {
+  color: #e13535;
+}
+
+.main .main__body .cell {
+  background-color: #fff;
+  box-shadow: 7px 7px 0px #000000;
+  border-radius: 20px;
+}

@@ -1,0 +1,70 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap");
+
+html {
+	font-size: 10px;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.header {
+	padding: 11px 0;
+	background-color: #fff;
+	border-bottom: 1px solid #c4c4c4;
+	margin-bottom: 35px;
+	.container {
+		max-width: 1238px;
+		margin: 0 auto;
+		padding: 0 10px;
+		.headerBody {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.headerLogo {
+				display: flex;
+				align-items: center;
+				.logo {
+					margin-right: 100px;
+				}
+				input#location {
+					width: 500px;
+					padding: 15px 0;
+					border: 2px solid #323232;
+					box-sizing: border-box;
+					border-radius: 5px;
+					background-image: url("../img/location.svg");
+					background-repeat: no-repeat;
+					background-position: 15px, 14px;
+					&::placeholder {
+						padding-left: 45px;
+						font-weight: 500;
+						font-size: 1.6rem;
+						line-height: 1.25;
+						color: #a1a1a1;
+					}
+				}
+			}
+			.headerBtn {
+				> a {
+					padding: 15px 20px;
+					display: inline-block;
+					box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+					border-radius: 5px;
+					font-weight: 700;
+					font-size: 1.6rem;
+					line-height: 1.1;
+					color: #fff;
+				}
+				.enter {
+					background: #ef781a;
+					margin-right: 30px;
+				}
+
+				.basket {
+					background: #00d008;
+				}
+			}
+		}
+	}
+}

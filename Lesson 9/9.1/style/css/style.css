@@ -90,14 +90,14 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.4rem;
+  line-height: 1.14;
 }
 
-h3 {
+.span__h3 {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 1.2rem;
+  line-height: 1.16;
 }
 
 .container {
@@ -115,6 +115,7 @@ h3 {
   margin: 0 auto;
   padding: 27px 43px;
   max-width: 755px;
+  border-radius: 20px;
   display: grid;
   gap: 19px;
   grid-template-columns: 250px 400px;
@@ -128,11 +129,56 @@ h3 {
   row-gap: 18px;
 }
 
+.main .main__body .grid .boy .boy__name h1 {
+  text-align: center;
+  padding: 15px 0 15px;
+}
+
+.main .main__body .grid .boy .boy__name .ellipse {
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.main .main__body .grid .boy .boy__name ul {
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.16;
+}
+
+.main .main__body .grid .boy .boy__name ul .ul-item1,
+.main .main__body .grid .boy .boy__name ul .ul-item2 {
+  display: inline-block;
+}
+
+.main .main__body .grid .boy .boy__name ul .ul-item1 {
+  margin-right: 19px;
+}
+
+.main .main__body .grid .boy .boy__name ul > li:not(li:last-child) {
+  margin-bottom: 14px;
+}
+
+.main .main__body .grid .boy .boy__aim h2 {
+  max-width: 180px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
 .main .main__body .grid .description {
   display: grid;
   grid-template-columns: 400px;
   grid-template-rows: 117px 268px;
   row-gap: 14px;
+}
+
+.main .main__body .grid .description .bio__text {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.main .main__body .grid .description .bio h2 {
+  padding: 15px 0 7px;
 }
 
 .main .main__body .grid .description .other__puncts {
@@ -151,16 +197,29 @@ h3 {
   box-shadow: 7px 7px 0px #29a71e;
 }
 
-.main .main__body .grid .description .other__puncts .goal__dream .goals > h2 {
+.main .main__body .grid .description .other__puncts .goal__dream .goals .goals__text {
+  max-width: 139px;
+  margin: 0 auto;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream .goals .goals__text > h2 {
   color: #29a71e;
+  padding: 15px 0 7px;
 }
 
 .main .main__body .grid .description .other__puncts .goal__dream .dream__companies {
   box-shadow: 7px 7px 0px #3675b0;
 }
 
-.main .main__body .grid .description .other__puncts .goal__dream .dream__companies > h2 {
+.main .main__body .grid .description .other__puncts .goal__dream .dream__companies .dream__text {
+  max-width: 139px;
+  margin: 0 auto;
+}
+
+.main .main__body .grid .description .other__puncts .goal__dream .dream__companies .dream__text > h2 {
+  text-align: center;
   color: #3675b0;
+  padding: 15px 0 7px;
 }
 
 .main .main__body .grid .description .other__puncts .frustration__personality {
@@ -173,12 +232,47 @@ h3 {
   box-shadow: 7px 7px 0px #e13535;
 }
 
-.main .main__body .grid .description .other__puncts .frustration__personality .frustrations > h2 {
+.main .main__body .grid .description .other__puncts .frustration__personality .frustrations .frustration__text {
+  max-width: 139px;
+  margin: 0 auto;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality .frustrations .frustration__text > h2 {
+  padding: 15px 0 7px;
   color: #e13535;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality .frustrations .frustration__text ul > li {
+  padding-left: 20px;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality .personality .personality__text {
+  max-width: 139px;
+  margin: 0 auto;
+}
+
+.main .main__body .grid .description .other__puncts .frustration__personality .personality .personality__text > h2 {
+  padding: 15px 0 7px;
 }
 
 .main .main__body .cell {
   background-color: #fff;
   box-shadow: 7px 7px 0px #000000;
   border-radius: 20px;
+}
+
+ul.marker li {
+  position: relative;
+  padding-left: 25px;
+}
+
+ul.marker li::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #000;
+  left: 13px;
+  top: 6px;
 }

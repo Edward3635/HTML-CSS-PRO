@@ -20,13 +20,13 @@ h1 {
 }
 h2 {
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: 1.4rem;
+	line-height: 1.14;
 }
-h3 {
+.span__h3 {
 	font-weight: 600;
-	font-size: 12px;
-	line-height: 14px;
+	font-size: 1.2rem;
+	line-height: 1.16;
 }
 .container {
 	min-width: 820px;
@@ -41,6 +41,7 @@ h3 {
 			margin: 0 auto;
 			padding: 27px 43px;
 			max-width: 755px;
+			border-radius: 20px;
 			display: grid;
 			gap: 19px;
 			grid-template-columns: 250px 400px;
@@ -50,12 +51,54 @@ h3 {
 				display: grid;
 				grid-template-rows: 319px 62px;
 				row-gap: 18px;
+				.boy__name {
+					h1 {
+						text-align: center;
+						padding: 15px 0 15px;
+					}
+					.ellipse {
+						text-align: center;
+						margin-bottom: 17px;
+					}
+					ul {
+						max-width: 200px;
+						margin: 0 auto;
+						font-size: 1.2rem;
+						line-height: 1.16;
+						.ul-item1,
+						.ul-item2 {
+							display: inline-block;
+						}
+						.ul-item1 {
+							margin-right: 19px;
+						}
+						> li:not(li:last-child) {
+							margin-bottom: 14px;
+						}
+					}
+				}
+				.boy__aim {
+					h2 {
+						max-width: 180px;
+						margin: 0 auto;
+						padding-top: 15px;
+					}
+				}
 			}
 			.description {
 				display: grid;
 				grid-template-columns: 400px;
 				grid-template-rows: 117px 268px;
 				row-gap: 14px;
+				.bio {
+					&__text {
+						max-width: 350px;
+						margin: 0 auto;
+					}
+					h2 {
+						padding: 15px 0 7px;
+					}
+				}
 				.other__puncts {
 					display: grid;
 					column-gap: 22px;
@@ -66,14 +109,25 @@ h3 {
 						grid-template-rows: 101px 151px;
 						.goals {
 							box-shadow: 7px 7px 0px #29a71e;
-							> h2 {
-								color: #29a71e;
+							.goals__text {
+								max-width: 139px;
+								margin: 0 auto;
+								> h2 {
+									color: #29a71e;
+									padding: 15px 0 7px;
+								}
 							}
 						}
 						.dream__companies {
 							box-shadow: 7px 7px 0px #3675b0;
-							> h2 {
-								color: #3675b0;
+							.dream__text {
+								max-width: 139px;
+								margin: 0 auto;
+								> h2 {
+									text-align: center;
+									color: #3675b0;
+									padding: 15px 0 7px;
+								}
 							}
 						}
 					}
@@ -83,8 +137,25 @@ h3 {
 						grid-template-rows: 165px 89px;
 						.frustrations {
 							box-shadow: 7px 7px 0px #e13535;
-							> h2 {
-								color: #e13535;
+							.frustration__text {
+								max-width: 139px;
+								margin: 0 auto;
+								> h2 {
+									padding: 15px 0 7px;
+									color: #e13535;
+								}
+								ul > li {
+									padding-left: 20px;
+								}
+							}
+						}
+						.personality {
+							.personality__text {
+								max-width: 139px;
+								margin: 0 auto;
+								> h2 {
+									padding: 15px 0 7px;
+								}
 							}
 						}
 					}
@@ -95,6 +166,23 @@ h3 {
 			background-color: #fff;
 			box-shadow: 7px 7px 0px #000000;
 			border-radius: 20px;
+		}
+	}
+}
+
+ul.marker {
+	li {
+		position: relative;
+		padding-left: 25px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			border-radius: 50px;
+			background-color: #000;
+			left: 13px;
+			top: 6px;
 		}
 	}
 }

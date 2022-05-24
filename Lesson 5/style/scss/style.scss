@@ -1,25 +1,25 @@
 @import "./reset";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Work+Sans:wght@500;600;700&display=swap");
 
-html{
+html {
 	font-size: 10px;
 }
 
 body {
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	font-style: normal;
 	background-color: #212529;
 	cursor: url("../../img/arrow.cur"), auto;
-	& a, button{
+	& a,
+	button {
 		cursor: url("../../img/hand.cur"), auto;
 	}
-
 }
-.container{
+.container {
 	max-width: 1440px;
 	margin: 0 auto;
 }
-.header__body{
+.header__body {
 	max-width: 1342px;
 	margin: 0 auto 108px auto;
 	padding-top: 17px;
@@ -28,116 +28,116 @@ body {
 	align-items: center;
 }
 
-.header__logo{
+.header__logo {
 	padding: 8px 0;
 }
 
-.header__nav{
+.header__nav {
 	max-width: 429px;
 }
-.ul__nav{
+.ul__nav {
 	padding: 10px;
 	display: flex;
-	&>a{
+	& > a {
 		font-weight: 600;
 		font-size: 1.8rem;
 		line-height: 1.5;
-		color: #FFFFFF;
-		&:hover{
-			transition: all .4s;
-			color: #FFB742;
+		color: #ffffff;
+		&:hover {
+			transition: all 0.4s;
+			color: #ffb742;
 		}
-		&:not(a:last-child){
+		&:not(a:last-child) {
 			margin-right: 25px;
 		}
 	}
 }
-.btn__hire_me{
+.btn__hire_me {
 	font-weight: 700;
 	font-size: 1.8rem;
 	line-height: 1.66;
 	color: #212529;
 	padding: 12px 26px;
 	border-radius: 30px;
-	background-color: #FFB742;
+	background-color: #ffb742;
 }
 
-
-.introduce__body{
+.introduce__body {
 	max-width: 1296px;
 	margin: 0 auto 137px auto;
-	& .introduce{
+	& .introduce {
 		max-width: 961px;
 		margin: 0 auto;
 		margin-bottom: 136px;
 		text-align: center;
-		font-family: 'Inter';
+		font-family: "Inter";
 		font-style: normal;
 		font-weight: 700;
 		font-size: 3.2rem;
 		line-height: 1.59;
-		color: #FFFFFF;
-		& a.author__introduce{
+		color: #ffffff;
+		& a.author__introduce {
 			text-decoration: underline;
-			color: #FFB742;
+			color: #ffb742;
 		}
-		& .h1{
+		& .h1 {
 			font-weight: 400;
 			font-size: 2.4rem;
 			line-height: 2.125;
 		}
 	}
-	& .statistic__list{
+	& .statistic__list {
 		display: flex;
 		justify-content: space-between;
-		& .list__item{
-			width: 32.1%;	
+		& .list__item {
+			width: 32.1%;
 			padding: 28px 40px;
-			background-color: #292B2E;
-			& .item__body{
+			background-color: #292b2e;
+			& .item__body {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 
-				& .item__emblem{
+				& .item__emblem {
 					width: 64px;
 					height: 64px;
 					border-radius: 50px;
 					position: relative;
 					background-color: #e9e9e9;
-					& img.emblem{
+					& img.emblem {
 						position: absolute;
 						top: 50%;
 						left: 50%;
 						transform: translate(-50%, -50%);
 					}
 				}
-				& .item__text{
+				& .item__text {
 					max-width: 159px;
 					text-align: center;
-	
-					font-family: 'Inter';
+
+					font-family: "Inter";
 					font-style: normal;
 					font-weight: 700;
 					font-size: 1.6rem;
 					line-height: 1.93;
-					color: #FFFFFF;
-					& span.number{
+					color: #ffffff;
+					& span.number {
 						display: block;
 						font-size: 3.2rem;
 						line-height: 1.25;
-						color: #FFB742;
+						color: #ffb742;
 					}
 				}
 			}
-			&:hover{
+			&:hover {
 				background-color: #ffb742;
-				transition: all .5s;
-				.item__text span.number, .item__text{
+				transition: all 0.5s;
+				.item__text span.number,
+				.item__text {
 					color: #000;
 					transition: all 1s;
 				}
-				svg path{
+				svg path {
 					fill: #000;
 				}
 			}
@@ -145,155 +145,153 @@ body {
 	}
 }
 
-.section__about{
+.section__about {
 	max-width: 1342px;
 	margin: 0 auto;
-	& .about__body{
+	& .about__body {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 65px;
-		& .about__description{
+		& .about__description {
 			max-width: 682px;
 			padding-top: 60px;
 		}
 	}
 }
-.work__body{
+.work__body {
 	max-width: 1234px;
 	margin: 0 auto;
 	padding-bottom: 116px;
-	.title{
+	.title {
 		display: block;
 		max-width: fit-content;
 		margin: 0 auto 25px auto;
 	}
-	>h2{
+	> h2 {
 		text-align: center;
 		line-height: 1.17;
 		margin: 0 auto 30px;
 	}
-	& .work__list{
+	& .work__list {
 		max-width: 652px;
 		margin: 0 auto;
-		& ul{
+		& ul {
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 55px;
-			& li{
+			& li {
 				padding: 5px 20px;
 				font-weight: 600;
 				font-size: 1.6rem;
 				line-height: 1.875;
 				color: #fff;
-				&:hover{
+				&:hover {
 					color: #000;
 					background-color: #ffb742;
-					transition: all .8s;
+					transition: all 0.8s;
 				}
 			}
 		}
 	}
 }
-.work__cards{
+.work__cards {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 31px;
 }
 
-.title{
+.title {
 	display: inline-block;
 	margin-bottom: 25px;
 	padding: 6px 25px;
 	background-color: #33363a;
-	color: #FFB742;
+	color: #ffb742;
 	border-radius: 50px;
 	font-weight: 600;
-	font-size: 2.0rem;
+	font-size: 2rem;
 	line-height: 1.5;
 }
 
-
-.footer__body{
+.footer__body {
 	padding: 148px 0 90px 0;
 	background-color: #1c1c1c;
 }
-.footer__flex{
+.footer__flex {
 	max-width: 1342px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	& h6{
+	& h6 {
 		margin-bottom: 15px;
 	}
-	& .work__sans a{
-		font-family: 'Work Sans';
+	& .work__sans a {
+		font-family: "Work Sans";
 		font-style: normal;
 		font-weight: 500;
 		font-size: 1.798rem;
 		line-height: 2;
-		color: #7B7B7B;
-		&>li{
+		color: #7b7b7b;
+		& > li {
 			width: fit-content;
 		}
 	}
-	& a:active, h6:active, .author__name:active{
-		color: #FFB742;
-		transition: all .4s;
+	& a:active,
+	h6:active,
+	.author__name:active {
+		color: #ffb742;
+		transition: all 0.4s;
 	}
-	
 }
-.author{
+.author {
 	max-width: 231px;
-	&__name{
+	&__name {
 		margin-bottom: 30px;
 		font-weight: 700;
 		font-size: 3.2rem;
 		line-height: 1;
-		color: #D4D4D4;
-
+		color: #d4d4d4;
 	}
-	&__activity{
-		font-family: 'Work Sans';
+	&__activity {
+		font-family: "Work Sans";
 		font-weight: 600;
 		font-size: 1.6rem;
 		line-height: 2;
-		color: #D4D4D4;
+		color: #d4d4d4;
 	}
 }
-.newsletter{
+.newsletter {
 	max-width: 300px;
-
 }
 
-h1{
-	font-family: 'Inter';
+h1 {
+	font-family: "Inter";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 4.8rem;
 	line-height: 1.9;
 }
 
-h2{
-	font-family: 'Roboto';
+h2 {
+	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 4.8rem;
 	line-height: 0.625;
-	color: #FFFFFF;
+	color: #ffffff;
 	margin-bottom: 30px;
 }
-h3{
+h3 {
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 1.875;
-	color: #D5D5D5;
+	color: #d5d5d5;
 	margin-bottom: 66px;
 }
-h6{
-	font-family: 'Work Sans';
+h6 {
+	font-family: "Work Sans";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 2.16rem;
 	line-height: 1.49;
-	color: #F5FBF2;
+	color: #f5fbf2;
 }

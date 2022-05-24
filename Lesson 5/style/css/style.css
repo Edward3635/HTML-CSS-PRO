@@ -74,13 +74,14 @@ html {
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   background-color: #212529;
   cursor: url("../../img/arrow.cur"), auto;
 }
 
-body a, body button {
+body a,
+body button {
   cursor: url("../../img/hand.cur"), auto;
 }
 
@@ -115,12 +116,12 @@ body a, body button {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .ul__nav > a:hover {
-  transition: all .4s;
-  color: #FFB742;
+  transition: all 0.4s;
+  color: #ffb742;
 }
 
 .ul__nav > a:not(a:last-child) {
@@ -134,7 +135,7 @@ body a, body button {
   color: #212529;
   padding: 12px 26px;
   border-radius: 30px;
-  background-color: #FFB742;
+  background-color: #ffb742;
 }
 
 .introduce__body {
@@ -147,17 +148,17 @@ body a, body button {
   margin: 0 auto;
   margin-bottom: 136px;
   text-align: center;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 1.59;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .introduce__body .introduce a.author__introduce {
   text-decoration: underline;
-  color: #FFB742;
+  color: #ffb742;
 }
 
 .introduce__body .introduce .h1 {
@@ -174,7 +175,7 @@ body a, body button {
 .introduce__body .statistic__list .list__item {
   width: 32.1%;
   padding: 28px 40px;
-  background-color: #292B2E;
+  background-color: #292b2e;
 }
 
 .introduce__body .statistic__list .list__item .item__body {
@@ -201,27 +202,28 @@ body a, body button {
 .introduce__body .statistic__list .list__item .item__body .item__text {
   max-width: 159px;
   text-align: center;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.93;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .introduce__body .statistic__list .list__item .item__body .item__text span.number {
   display: block;
   font-size: 3.2rem;
   line-height: 1.25;
-  color: #FFB742;
+  color: #ffb742;
 }
 
 .introduce__body .statistic__list .list__item:hover {
   background-color: #ffb742;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.introduce__body .statistic__list .list__item:hover .item__text span.number, .introduce__body .statistic__list .list__item:hover .item__text {
+.introduce__body .statistic__list .list__item:hover .item__text span.number,
+.introduce__body .statistic__list .list__item:hover .item__text {
   color: #000;
   transition: all 1s;
 }
@@ -286,7 +288,7 @@ body a, body button {
 .work__body .work__list ul li:hover {
   color: #000;
   background-color: #ffb742;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 
 .work__cards {
@@ -300,10 +302,10 @@ body a, body button {
   margin-bottom: 25px;
   padding: 6px 25px;
   background-color: #33363a;
-  color: #FFB742;
+  color: #ffb742;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -324,21 +326,23 @@ body a, body button {
 }
 
 .footer__flex .work__sans a {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 1.798rem;
   line-height: 2;
-  color: #7B7B7B;
+  color: #7b7b7b;
 }
 
 .footer__flex .work__sans a > li {
   width: fit-content;
 }
 
-.footer__flex a:active, .footer__flex h6:active, .footer__flex .author__name:active {
-  color: #FFB742;
-  transition: all .4s;
+.footer__flex a:active,
+.footer__flex h6:active,
+.footer__flex .author__name:active {
+  color: #ffb742;
+  transition: all 0.4s;
 }
 
 .author {
@@ -350,15 +354,15 @@ body a, body button {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 1;
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .author__activity {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2;
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .newsletter {
@@ -366,7 +370,7 @@ body a, body button {
 }
 
 h1 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 4.8rem;
@@ -374,12 +378,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 0.625;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -387,15 +391,15 @@ h3 {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.875;
-  color: #D5D5D5;
+  color: #d5d5d5;
   margin-bottom: 66px;
 }
 
 h6 {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 2.16rem;
   line-height: 1.49;
-  color: #F5FBF2;
+  color: #f5fbf2;
 }

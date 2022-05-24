@@ -4,67 +4,187 @@
 html {
 	font-size: 10px;
 }
+
 body {
 	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	background-color: #ffdab9;
+}
+@mixin container__body {
+	max-width: 1238px;
+	margin: 0 auto;
+}
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: #fff;
 }
 
 .header {
-	padding: 11px 0;
-	background-color: #fff;
-	border-bottom: 1px solid #c4c4c4;
-	margin-bottom: 35px;
 	.container {
-		max-width: 1238px;
-		margin: 0 auto;
-		padding: 0 10px;
-		.headerBody {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			.headerLogo {
-				display: flex;
-				align-items: center;
-				.logo {
-					margin-right: 100px;
-				}
-				input#location {
-					width: 500px;
-					padding: 15px 0;
-					border: 2px solid #323232;
-					box-sizing: border-box;
-					border-radius: 5px;
-					background-image: url("../img/location.svg");
-					background-repeat: no-repeat;
-					background-position: 15px, 14px;
-					&::placeholder {
-						padding-left: 45px;
-						font-weight: 500;
-						font-size: 1.6rem;
-						line-height: 1.25;
-						color: #a1a1a1;
+		padding-bottom: 25px;
+		background-color: #ececec;
+		.header__body {
+			background-color: #fff;
+			box-shadow: 0 10px 4px -2px rgba(0, 0, 0, 0.25);
+			.header__block1 {
+				border-bottom: 1px solid #c4c4c4;
+				.header__nav {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 11px 0;
+					.header__logo {
+						display: flex;
+						align-items: center;
+						.logo {
+							margin-right: 100px;
+						}
+						input#location {
+							width: 500px;
+							padding: 15px 0 15px 45px;
+							border: 2px solid #323232;
+							box-sizing: border-box;
+							border-radius: 5px;
+							background-image: url("../../img/location.svg");
+							background-repeat: no-repeat;
+							background-position: 15px, 14px;
+							&::placeholder {
+								font-weight: 500;
+								font-size: 1.6rem;
+								line-height: 1.25;
+								color: #a1a1a1;
+							}
+							&:focus {
+								background: none;
+								&::placeholder {
+									color: #fff;
+								}
+							}
+						}
+						.headerBtn {
+							> a {
+								padding: 15px 20px;
+								display: inline-block;
+								box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+								border-radius: 5px;
+								font-weight: 700;
+								font-size: 1.6rem;
+								line-height: 1.1;
+								color: #fff;
+							}
+							.enter {
+								background: #ef781a;
+								margin-right: 30px;
+							}
+
+							.basket {
+								background: #00d008;
+							}
+						}
 					}
+					.header__btn {
+						> a {
+							padding: 15px 20px;
+							display: inline-block;
+							box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+							border-radius: 5px;
+							font-weight: 700;
+							font-size: 1.6rem;
+							line-height: 1.1;
+							color: #fff;
+						}
+						.enter {
+							background: #ef781a;
+							margin-right: 30px;
+						}
+
+						.basket {
+							background: #00d008;
+						}
+					}
+					@include container__body();
 				}
 			}
-			.headerBtn {
-				> a {
-					padding: 15px 20px;
-					display: inline-block;
-					box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-					border-radius: 5px;
-					font-weight: 700;
-					font-size: 1.6rem;
-					line-height: 1.1;
-					color: #fff;
-				}
-				.enter {
-					background: #ef781a;
-					margin-right: 30px;
-				}
-
-				.basket {
-					background: #00d008;
+			.header__block2 {
+				.header__title {
+					> h1 {
+						padding: 76px 0 30px;
+					}
+					@include container__body();
 				}
 			}
 		}
 	}
+}
+
+.main {
+	.container {
+		background-color: #ececec;
+	}
+
+	&__body {
+		@include container__body();
+	}
+
+	&__content {
+	}
+
+	&__menu {
+		.ul__menu {
+			> li {
+				font-weight: 500;
+				font-size: 1.8rem;
+				line-height: 1.22;
+				color: #7b7b7b;
+			}
+		}
+	}
+
+	&__grid {
+	}
+
+	&__about {
+	}
+
+	&__aside {
+	}
+}
+
+.footer {
+	.container {
+		background-color: #323232;
+		.footer__body {
+			display: flex;
+			justify-content: space-between;
+			@include container__body();
+			.footer__left {
+				padding: 39px 0;
+				> a {
+					font-weight: 500;
+					font-size: 1.8rem;
+					line-height: 1.22;
+					color: #fff;
+				}
+				.about__us {
+					margin-right: 27px;
+				}
+				.contacts {
+					margin-right: 16px;
+				}
+			}
+			.footer__right {
+				margin-top: 30px;
+				> a {
+					margin-left: 18px;
+				}
+			}
+		}
+	}
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 3.6rem;
+	line-height: 1.22;
 }

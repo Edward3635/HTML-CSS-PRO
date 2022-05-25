@@ -149,7 +149,15 @@ body {
 				font-weight: 500;
 				font-size: 1.8rem;
 				line-height: 1.22;
-				color: #7b7b7b;
+				> a {
+					padding: 6px 8px;
+					border-radius: 10px;
+					color: #7b7b7b;
+				}
+				&:hover > a {
+					background-color: #c4c4c4;
+					color: #343434;
+				}
 			}
 		}
 	}

@@ -228,7 +228,17 @@ body {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.22;
+}
+
+.main__menu .ul__menu > li > a {
+  padding: 6px 8px;
+  border-radius: 10px;
   color: #7b7b7b;
+}
+
+.main__menu .ul__menu > li:hover > a {
+  background-color: #c4c4c4;
+  color: #343434;
 }
 
 .main__about > h2 {

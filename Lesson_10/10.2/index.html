@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 10</title>
+	<link rel="stylesheet" href="./style/css/style.css">
+</head>
+
+<body>
+	<main class="main">
+		<div class="main__body">
+			<nav class="nav">
+				<div class="main__nav">
+					<input class="dark__light" type="checkbox" id="dark__light">
+					<label class="label__dark-light" for="dark__light">
+						<div class="block__switch"></div>
+					</label>
+					<input class="input__disable" type="checkbox" id="arrow">
+					<label class="label__arrow" for="arrow">
+						<div class="arrow"><img src="./img/arrow.svg" alt="arrow"></div>
+					</label>
+					<div class="nav__short">
+						<div class="avatar__text">
+							<div class="avatar">AF</div>
+							<div class="avatar__titles">
+								<h1>AnimatedFred</h1>
+								<h2> animated@demo.com</h2>
+							</div>
+						</div>
+						<div class="menu">
+							<div class="short__menu">
+								<a href="#">
+									<div class="block__search menu-item">
+										<div><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M21 20.9999L16.65 16.6499" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<div class="my__input"><input class="input__search" type="search"
+												placeholder="Search..."></div>
+									</div>
+								</a>
+								<a href="#">
+									<div class="block__dashboard menu-item">
+										<div class="dashboard__img"><svg width="20" height="22" viewBox="0 0 20 22"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M1 8L10 1L19 8V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8Z"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M7 21V11H13V21" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<h3>Dashboard</h3>
+									</div>
+								</a>
+								<a href="#">
+									<div class="block__revenue menu-item">
+										<div><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 20V10" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M12 20V4" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M6 20V14" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<h3>Revenue</h3>
+									</div>
+								</a>
+								<a href="#">
+									<div class="block__notifications menu-item">
+										<div><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path
+													d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<h3>Notifications</h3>
+									</div>
+								</a>
+								<a href="#">
+									<div class="block__analytics menu-item">
+										<div><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M21.21 15.8901C20.5738 17.3946 19.5788 18.7203 18.3119 19.7514C17.045 20.7825 15.5448 21.4875 13.9424 21.8049C12.3401 22.1222 10.6844 22.0422 9.12015 21.5719C7.55587 21.1015 6.13062 20.2551 4.96902 19.1067C3.80741 17.9583 2.94481 16.5428 2.45663 14.984C1.96845 13.4252 1.86956 11.7706 2.1686 10.1647C2.46763 8.55886 3.15549 7.05071 4.17204 5.77211C5.18859 4.49351 6.50288 3.4834 8 2.83008"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path
+													d="M22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2V12H22Z"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<h3>Analytics</h3>
+									</div>
+								</a>
+								<a href="#">
+									<div class="block__inventory menu-item">
+										<div><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.5 9.39996L7.5 4.20996" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path
+													d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z"
+													stroke="#C0BFBD" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M3.27 6.95996L12 12.01L20.73 6.95996" stroke="#C0BFBD"
+													stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M12 22.08V12" stroke="#C0BFBD" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<h3>Inventory</h3>
+									</div>
+								</a>
+							</div>
+							<div class="footer__menu">
+								<a href="#">
+									<div class="block__logout menu-item">
+										<div><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
+													stroke="#7C7C7A" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+												<path d="M16 17L21 12L16 7" stroke="#7C7C7A" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M21 12H9" stroke="#7C7C7A" stroke-width="2"
+													stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<h3>Logout</h3>
+									</div>
+								</a>
+								<a class="a__light" href="#">
+									<div class="block__light menu-item">
+										<div><img src="./img/light.svg" alt="light"></div>
+										<h3>Light mode</h3>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="content">
+				<ul>
+					<li class="li__content">1. Світлий\темний режими працюють.</li>
+					<li class="li__content">2. Панель відкривається (">") та закривається("<") стрілочкою.</li>
+					<li class="li__content">3. Там нижче ще є пункти
+						&#11015;.</li>
+					<li class="li__content">4. Панель зафіксована.</li>
+					<li class="li__content">5 Блок пошуку клікабельний.</li>
+					<li class="li__content">6. Гарного дня
+						&#128526;.</li>
+				</ul>
+			</div>
+	</main>
+</body>
+
+</html>
